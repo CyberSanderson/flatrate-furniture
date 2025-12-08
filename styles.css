@@ -35,8 +35,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+/* --- UPDATED IMAGE HANDLING --- */
 img {
   max-width: 100%;
+  height: auto; /* This prevents the "squashed" look */
   display: block;
 }
 
@@ -80,17 +82,11 @@ a:hover {
 }
 
 .logo-img {
-  width: 32px;
-  height: 32px;
+  /* No specific width here, handled by HTML width/height or generic img rule */
   border-radius: 12px;
-  background: radial-gradient(circle at 30% 30%, #60a5fa, #1d4ed8);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-weight: 700;
-  font-size: 0.85rem;
-  color: #f9fafb;
-  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
 }
 
 .logo-text {
@@ -131,7 +127,6 @@ a:hover {
 }
 
 /* Mobile Menu Toggle (hamburger) */
-/* Mobile Menu Toggle (hamburger + "Menu" text) */
 .menu-toggle {
   display: none; /* shown on mobile in media query */
   border: none;
@@ -139,7 +134,6 @@ a:hover {
   padding: 0;
   margin: 0;
   cursor: pointer;
-  display: none;
   align-items: center;
   gap: 0.4rem;
 }
@@ -177,9 +171,6 @@ body.nav-open .menu-icon span:nth-child(2) {
 body.nav-open .menu-icon span:nth-child(3) {
   transform: translateY(-6px) rotate(-45deg);
 }
-
-
-
 
 /* Buttons */
 .btn {
@@ -280,6 +271,14 @@ body.nav-open .menu-icon span:nth-child(3) {
 .hero-card h3 {
   margin-top: 1.2rem;
   font-size: 1rem;
+}
+
+/* --- UPDATED SECTION IMAGE STYLING --- */
+.section-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1rem;
 }
 
 .checklist,
@@ -388,6 +387,16 @@ body.nav-open .menu-icon span:nth-child(3) {
   padding: 1.5rem 1.4rem;
   border: 1px solid var(--border-subtle);
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.03);
+}
+
+/* --- UPDATED PRICING CARD IMAGE STYLING --- */
+/* This forces all pricing images to be uniform and cropped properly */
+.price-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
 .price-card h3 {
@@ -727,4 +736,3 @@ textarea {
     padding: 1.25rem 1.15rem;
   }
 }
-
