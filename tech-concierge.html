@@ -5,877 +5,228 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>In-Home Tech Concierge & Senior Tech Support | Bronx 10463</title>
-  <meta name="description" content="Patient, in-home tech help for seniors and busy locals in the Bronx (10463). Smart TV setup, WiFi troubleshooting, phone help, scam protection and more. Flat-rate pricing, no tech jargon." />
+  <meta name="description" content="Patient, in-home tech help for seniors and busy locals in Riverdale & Bronx (10463). Smart TV setup, WiFi troubleshooting, phones, & scam protection. Flat-rate pricing." />
 
-  <!-- Canonical (update href to your real URL) -->
-  <link rel="canonical" href="https://www.yourdomain.com/tech-concierge" />
+  <link rel="canonical" href="https://www.flatratefurnitureassembly.com/tech-concierge.html" />
 
-  <!-- Open Graph / Social -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="shortcut icon" href="images/favicon.ico">
+
   <meta property="og:title" content="In-Home Tech Concierge & Senior Tech Support | Bronx 10463" />
   <meta property="og:description" content="Smart TV setup, WiFi help, phone setup, scam protection and more — right at home in 10463. Friendly, patient tech support for seniors and busy locals." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://www.yourdomain.com/tech-concierge" />
-  <meta property="og:image" content="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1600&q=80" />
+  <meta property="og:url" content="https://www.flatratefurnitureassembly.com/tech-concierge.html" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80" />
 
   <style>
     :root {
       --primary: #2563eb;
       --primary-dark: #1d4ed8;
       --accent: #0f766e;
-      --bg: #f4f4f5;
-      --text: #111827;
-      --muted: #6b7280;
+      --bg: #f8fafc;
+      --text: #1e293b;
+      --muted: #64748b;
       --radius-lg: 14px;
-      --shadow-soft: 0 18px 40px rgba(15, 23, 42, 0.12);
+      --shadow-soft: 0 10px 30px rgba(15, 23, 42, 0.08);
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       color: var(--text);
       background: #ffffff;
       line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    .page {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
+    a { color: inherit; text-decoration: none; transition: 0.2s; }
+    img { max-width: 100%; display: block; height: auto; }
+    
+    /* Layout */
+    .page { min-height: 100vh; display: flex; flex-direction: column; }
+    .container { max-width: 1120px; margin: 0 auto; padding: 0 1.25rem; }
+    .section { padding: 4rem 0; }
+    .section-alt { background: var(--bg); border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0; }
 
     /* Header */
     header {
       position: sticky;
       top: 0;
       z-index: 20;
-      background: rgba(255, 255, 255, 0.96);
+      background: rgba(255, 255, 255, 0.95);
       backdrop-filter: blur(10px);
-      border-bottom: 1px solid #e5e7eb;
+      border-bottom: 1px solid #e2e8f0;
     }
 
     .nav {
       max-width: 1120px;
       margin: 0 auto;
-      padding: 0.8rem 1rem;
+      padding: 0.8rem 1.25rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 1rem;
     }
 
-    .nav-brand {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      font-weight: 700;
-      font-size: 1.05rem;
-    }
+    .nav-brand { display: flex; align-items: center; gap: 0.75rem; font-weight: 700; font-size: 1rem; color: #0f172a; }
+    .nav-tagline { font-size: 0.75rem; color: var(--muted); font-weight: 500; display: block; margin-top: 2px; }
+    .nav-logo { border-radius: 12px; }
 
-    .nav-brand span {
-      display: block;
-      line-height: 1.2;
-    }
-
-    .nav-tagline {
-      font-size: 0.75rem;
-      color: var(--muted);
-      font-weight: 500;
-    }
-
-    .nav-logo {
-      width: 34px;
-      height: 34px;
-      border-radius: 999px;
-      background: radial-gradient(circle at 30% 20%, #60a5fa, #1d4ed8);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #ffffff;
-      font-weight: 800;
-      font-size: 0.85rem;
-      box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
-      flex-shrink: 0;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      font-size: 0.9rem;
-      flex-wrap: wrap;
-    }
-
-    .nav-links a {
-      color: var(--muted);
-      font-weight: 500;
-    }
-
-    .nav-links a.active {
-      color: var(--primary-dark);
-      font-weight: 600;
-    }
-
-    .nav-cta {
-      display: none;
-    }
+    .nav-links { display: flex; align-items: center; gap: 1.5rem; font-size: 0.9rem; }
+    .nav-links a:hover { color: var(--primary); }
+    .nav-cta { display: none; }
 
     @media (min-width: 768px) {
-      .nav-cta {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        font-size: 0.85rem;
-      }
+      .nav-cta { display: flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; }
     }
 
     .pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      border-radius: 999px;
-      padding: 0.2rem 0.7rem;
-      font-size: 0.75rem;
-      background: #ecfdf3;
-      color: #166534;
-      border: 1px solid #bbf7d0;
-      font-weight: 500;
+      display: inline-flex; align-items: center; gap: 0.5rem; border-radius: 999px;
+      padding: 0.25rem 0.75rem; font-size: 0.75rem; background: #ecfdf5; color: #15803d; border: 1px solid #bbf7d0; font-weight: 600;
     }
-
-    .dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 999px;
-      background: #22c55e;
-      box-shadow: 0 0 0 5px rgba(34, 197, 94, 0.3);
-    }
-
-    /* Layout */
-    main {
-      flex: 1;
-    }
-
-    .section {
-      padding: 3rem 1.2rem;
-    }
-
-    .section-alt {
-      background: var(--bg);
-    }
-
-    .container {
-      max-width: 1120px;
-      margin: 0 auto;
-    }
+    .dot { width: 6px; height: 6px; border-radius: 999px; background: #22c55e; box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.2); }
 
     /* Hero */
-    .hero-grid {
-      display: grid;
-      gap: 2.5rem;
-      align-items: center;
-    }
-
-    @media (min-width: 900px) {
-      .hero-grid {
-        grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-      }
-    }
+    .hero-grid { display: grid; gap: 3rem; align-items: center; }
+    @media (min-width: 900px) { .hero-grid { grid-template-columns: 1.1fr 1fr; } }
 
     .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.6rem;
-      border-radius: 999px;
-      padding: 0.25rem 0.8rem;
-      background: #eff6ff;
-      color: #1d4ed8;
-      font-size: 0.75rem;
-      font-weight: 600;
-      margin-bottom: 0.75rem;
+      display: inline-flex; align-items: center; gap: 0.6rem; border-radius: 999px;
+      padding: 0.35rem 0.8rem; background: #eff6ff; color: #1d4ed8; font-size: 0.8rem; font-weight: 600; margin-bottom: 1rem;
     }
+    .eyebrow span { padding: 0.1rem 0.5rem; border-radius: 999px; background: #1d4ed8; color: #ffffff; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; }
 
-    .eyebrow span {
-      padding: 0.1rem 0.5rem;
-      border-radius: 999px;
-      background: #1d4ed8;
-      color: #ffffff;
-      font-size: 0.75rem;
-    }
+    h1 { font-size: clamp(2rem, 4vw, 2.8rem); line-height: 1.15; margin: 0 0 1rem; letter-spacing: -0.03em; color: #0f172a; }
+    
+    .hero-subtitle { font-size: 1.1rem; color: var(--muted); max-width: 34rem; margin-bottom: 2rem; }
 
-    h1 {
-      font-size: 1.9rem;
-      line-height: 1.2;
-      margin: 0 0 0.75rem;
-      letter-spacing: -0.03em;
-    }
-
-    @media (min-width: 768px) {
-      h1 {
-        font-size: 2.4rem;
-      }
-    }
-
-    .hero-subtitle {
-      font-size: 0.98rem;
-      color: var(--muted);
-      max-width: 34rem;
-      margin-bottom: 1.25rem;
-    }
-
-    .hero-badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-bottom: 1.5rem;
-    }
-
+    .hero-badges { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 2rem; }
     .hero-badges span {
-      font-size: 0.75rem;
-      padding: 0.25rem 0.7rem;
-      border-radius: 999px;
-      border: 1px solid #e5e7eb;
-      background: #ffffff;
-      color: #4b5563;
+      font-size: 0.8rem; padding: 0.35rem 0.8rem; border-radius: 999px;
+      border: 1px solid #e2e8f0; background: #ffffff; color: #475569; font-weight: 500;
     }
 
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      align-items: center;
-      margin-bottom: 1rem;
-    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; margin-bottom: 1.5rem; }
 
+    /* Buttons */
     .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.4rem;
-      padding: 0.7rem 1.4rem;
-      border-radius: 999px;
-      border: none;
-      cursor: pointer;
-      font-weight: 600;
-      font-size: 0.9rem;
-      text-decoration: none;
-      transition: transform 0.08s ease, box-shadow 0.08s ease, background 0.1s ease, opacity 0.1s ease;
-      white-space: nowrap;
+      display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+      padding: 0.85rem 1.75rem; border-radius: 999px; border: none; cursor: pointer;
+      font-weight: 600; font-size: 0.95rem; text-decoration: none; transition: all 0.2s ease;
     }
+    .btn-primary { background: var(--primary); color: #ffffff; box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.3); }
+    .btn-primary:hover { background: var(--primary-dark); transform: translateY(-2px); }
+    .btn-secondary { background: #ffffff; color: var(--text); border: 1px solid #e5e7eb; }
+    .btn-secondary:hover { background: #f8fafc; border-color: #cbd5e1; }
+    .btn-text { background: transparent; color: var(--muted); padding: 0; font-size: 0.9rem; text-decoration: underline; }
+    .btn-text:hover { color: var(--primary); }
 
-    .btn-primary {
-      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-      color: #ffffff;
-      box-shadow: 0 16px 40px rgba(37, 99, 235, 0.36);
-    }
+    .hero-note { font-size: 0.85rem; color: var(--muted); background: #f1f5f9; padding: 0.5rem 1rem; border-radius: 8px; display: inline-block; }
+    .hero-note strong { color: #0f172a; }
 
-    .btn-secondary {
-      background: #ffffff;
-      color: var(--text);
-      border: 1px solid #e5e7eb;
-    }
-
-    .btn-text {
-      background: transparent;
-      color: var(--primary-dark);
-      padding: 0;
-      border-radius: 0;
-      white-space: normal;
-    }
-
-    .btn:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
-    }
-
-    .btn:active {
-      transform: translateY(0px) scale(0.99);
-      box-shadow: none;
-    }
-
-    .hero-note {
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
-
-    .hero-note strong {
-      color: #16a34a;
-    }
-
-    .hero-media {
-      position: relative;
-    }
-
-    .hero-card {
-      border-radius: 22px;
-      overflow: hidden;
-      box-shadow: var(--shadow-soft);
-      background: #020617;
-      position: relative;
-    }
-
-    .hero-card img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      max-height: 420px;
-    }
+    /* Hero Image Card */
+    .hero-card { border-radius: 24px; overflow: hidden; box-shadow: var(--shadow-soft); position: relative; }
+    .hero-card img { width: 100%; height: auto; object-fit: cover; aspect-ratio: 4/3; background: #e2e8f0; }
 
     .hero-tag {
-      position: absolute;
-      left: 1rem;
-      top: 1rem;
-      background: rgba(15, 23, 42, 0.85);
-      color: #e5e7eb;
-      padding: 0.4rem 0.8rem;
-      border-radius: 999px;
-      font-size: 0.75rem;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      backdrop-filter: blur(10px);
-    }
-
-    .hero-tag-dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 999px;
-      background: #22c55e;
+      position: absolute; left: 1rem; top: 1rem; background: rgba(255, 255, 255, 0.95);
+      color: #0f172a; padding: 0.5rem 1rem; border-radius: 999px; font-size: 0.8rem;
+      display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 600; box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
 
     .hero-overlay-card {
-      position: absolute;
-      right: 0.5rem;
-      bottom: 0.5rem;
-      background: rgba(15, 23, 42, 0.94);
-      color: #e5e7eb;
-      padding: 0.8rem;
-      border-radius: 16px;
-      font-size: 0.75rem;
-      max-width: 220px;
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(148, 163, 184, 0.5);
+      position: absolute; right: 1rem; bottom: 1rem; background: rgba(255, 255, 255, 0.95);
+      color: #334155; padding: 1rem; border-radius: 16px; font-size: 0.85rem;
+      max-width: 260px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); border: 1px solid #f1f5f9;
     }
+    .hero-overlay-card strong { display: block; margin-bottom: 0.3rem; color: #059669; }
 
-    .hero-overlay-card strong {
-      display: block;
-      margin-bottom: 0.2rem;
-      font-size: 0.8rem;
-    }
+    /* Standard Cards */
+    .section-header { max-width: 640px; margin-bottom: 3rem; }
+    .section-title { font-size: 1.8rem; margin: 0 0 0.75rem; color: #0f172a; font-weight: 700; letter-spacing: -0.02em; }
+    .section-kicker { text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.8rem; color: var(--primary); font-weight: 700; margin-bottom: 0.5rem; }
+    
+    .grid-3 { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
 
-    /* Sections */
-    .section-header {
-      max-width: 640px;
-      margin-bottom: 2rem;
-    }
+    .card { background: #ffffff; border-radius: var(--radius-lg); padding: 1.5rem; border: 1px solid #e5e7eb; box-shadow: 0 2px 8px rgba(0,0,0,0.04); transition: transform 0.2s; }
+    .card:hover { transform: translateY(-3px); box-shadow: 0 12px 24px rgba(0,0,0,0.06); }
+    .card h3 { margin-top: 0.75rem; font-size: 1.1rem; }
+    .badge { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 10px; background: #eff6ff; font-size: 1.2rem; }
 
-    .section-title {
-      font-size: 1.5rem;
-      margin: 0 0 0.5rem;
-      letter-spacing: -0.02em;
-    }
-
-    .section-kicker {
-      text-transform: uppercase;
-      letter-spacing: 0.18em;
-      font-size: 0.75rem;
-      color: var(--muted);
-      font-weight: 600;
-      margin-bottom: 0.4rem;
-    }
-
-    .section-subtitle {
-      font-size: 0.95rem;
-      color: var(--muted);
-    }
-
-    .grid-3 {
-      display: grid;
-      gap: 1.5rem;
-    }
-
-    @media (min-width: 768px) {
-      .grid-3 {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-    }
-
-    .card {
-      background: #ffffff;
-      border-radius: var(--radius-lg);
-      padding: 1.25rem;
-      border: 1px solid #e5e7eb;
-      box-shadow: 0 6px 20px rgba(15, 23, 42, 0.02);
-    }
-
-    .card h3 {
-      margin-top: 0.6rem;
-      margin-bottom: 0.35rem;
-      font-size: 1rem;
-    }
-
-    .card p {
-      font-size: 0.9rem;
-      color: var(--muted);
-      margin: 0;
-    }
-
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      width: 34px;
-      height: 34px;
-      border-radius: 999px;
-      background: #eef2ff;
-      color: #4338ca;
-      font-size: 0.8rem;
-      font-weight: 700;
-    }
-
-    .list-check {
-      list-style: none;
-      padding: 0;
-      margin: 0.2rem 0 0;
-    }
-
-    .list-check li {
-      font-size: 0.88rem;
-      color: var(--muted);
-      display: flex;
-      align-items: flex-start;
-      gap: 0.4rem;
-      margin-bottom: 0.25rem;
-    }
-
-    .list-check li::before {
-      content: "✓";
-      font-size: 0.85rem;
-      color: var(--accent);
-      margin-top: 2px;
-    }
+    .list-check { list-style: none; padding: 0; margin: 1rem 0 0; }
+    .list-check li { font-size: 0.9rem; color: var(--muted); display: flex; align-items: start; gap: 0.5rem; margin-bottom: 0.5rem; }
+    .list-check li::before { content: "✓"; color: var(--primary); font-weight: bold; }
 
     /* Pricing */
-    .pricing-grid {
-      display: grid;
-      gap: 1.25rem;
-    }
+    .pricing-grid { display: grid; gap: 2rem; }
+    @media (min-width: 860px) { .pricing-grid { grid-template-columns: 1.3fr 1fr; align-items: start; } }
 
-    @media (min-width: 860px) {
-      .pricing-grid {
-        grid-template-columns: 1.2fr 1fr;
-        align-items: flex-start;
-      }
-    }
+    .price-card { border-radius: 20px; padding: 2rem; background: #ffffff; border: 1px solid #e5e7eb; box-shadow: var(--shadow-soft); }
+    .price-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; padding-bottom: 0.5rem; border-bottom: 1px dashed #e2e8f0; }
+    .price-label { font-weight: 600; color: #334155; }
+    .price-value { font-weight: 800; color: #0f172a; font-size: 1.1rem; }
+    .price-hint { font-size: 0.85rem; color: var(--muted); margin-bottom: 1.5rem; }
 
-    .price-card {
-      border-radius: 18px;
-      padding: 1.5rem;
-      background: #ffffff;
-      border: 1px solid #e5e7eb;
-      box-shadow: var(--shadow-soft);
-    }
+    .bundles { border-radius: 16px; background: #f0fdf4; padding: 1.5rem; border: 1px solid #bbf7d0; }
+    .bundles h3 { margin-top: 0; color: #166534; font-size: 1.1rem; }
+    .bundles ul { margin: 1rem 0; padding-left: 1.2rem; font-size: 0.9rem; color: #15803d; }
+    .bundles li { margin-bottom: 0.5rem; }
 
-    .price-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      margin-bottom: 0.6rem;
-      font-size: 0.95rem;
-      gap: 0.75rem;
-    }
+    /* Contact Form */
+    .contact-card { background: #ffffff; border-radius: 20px; padding: 2rem; border: 1px solid #e5e7eb; box-shadow: var(--shadow-soft); }
+    .contact-grid { display: grid; gap: 3rem; }
+    @media (min-width: 860px) { .contact-grid { grid-template-columns: 1.2fr 0.8fr; } }
 
-    .price-label {
-      font-weight: 600;
+    .contact-label { display: block; font-size: 0.9rem; font-weight: 600; color: #334155; margin-bottom: 0.4rem; }
+    .contact-input, .contact-select, .contact-textarea {
+      width: 100%; padding: 0.75rem; border-radius: 10px; border: 1px solid #cbd5e1; font-size: 1rem; font-family: inherit; margin-bottom: 1rem;
     }
-
-    .price-value {
-      font-weight: 700;
-      color: var(--primary-dark);
-      white-space: nowrap;
-    }
-
-    .price-hint {
-      font-size: 0.8rem;
-      color: var(--muted);
-      margin-bottom: 0.4rem;
-    }
-
-    .bundles {
-      border-radius: 16px;
-      background: #ecfdf5;
-      padding: 1rem;
-      border: 1px solid #bbf7d0;
-      font-size: 0.88rem;
-    }
-
-    .bundles h3 {
-      font-size: 0.95rem;
-      margin-top: 0;
-      margin-bottom: 0.4rem;
-    }
-
-    .bundles ul {
-      padding-left: 1.1rem;
-      margin: 0.3rem 0 0.4rem;
-    }
-
-    .bundles li {
-      margin-bottom: 0.2rem;
-    }
-
-    /* Steps */
-    .steps {
-      display: grid;
-      gap: 1.2rem;
-    }
-
-    @media (min-width: 768px) {
-      .steps {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-      }
-    }
-
-    .step-number {
-      width: 26px;
-      height: 26px;
-      border-radius: 999px;
-      border: 1px solid #d1d5db;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.8rem;
-      color: var(--muted);
-      margin-bottom: 0.5rem;
-    }
-
-    /* FAQ */
-    .faq {
-      max-width: 740px;
-    }
-
-    .faq-item {
-      padding: 0.85rem 0;
-      border-bottom: 1px solid #e5e7eb;
-    }
-
-    .faq-item h3 {
-      font-size: 0.95rem;
-      margin: 0 0 0.3rem;
-    }
-
-    .faq-item p {
-      font-size: 0.9rem;
-      color: var(--muted);
-      margin: 0;
-    }
-
-    /* Service area */
-    .pill-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-top: 0.6rem;
-    }
-
-    .pill-tag {
-      padding: 0.25rem 0.65rem;
-      border-radius: 999px;
-      border: 1px solid #e5e7eb;
-      font-size: 0.8rem;
-      background: #ffffff;
-      color: #4b5563;
-    }
-
-    /* Booking block */
-    .booking-block {
-      border-radius: 18px;
-      background: linear-gradient(135deg, #1e293b, #020617);
-      color: #e5e7eb;
-      padding: 1.7rem 1.4rem;
-      display: grid;
-      gap: 1rem;
-      align-items: center;
-    }
-
-    @media (min-width: 768px) {
-      .booking-block {
-        grid-template-columns: 1.4fr 1fr;
-        padding: 2rem;
-      }
-    }
-
-    .booking-block h2 {
-      margin: 0 0 0.4rem;
-      font-size: 1.4rem;
-    }
-
-    .booking-block p {
-      margin: 0;
-      font-size: 0.9rem;
-      color: #cbd5f5;
-    }
-
-    .booking-details {
-      font-size: 0.9rem;
-    }
-
-    .booking-details strong {
-      color: #e5e7eb;
-    }
-
-    .booking-line {
-      margin-bottom: 0.4rem;
-    }
-
-    /* Contact section */
-    .contact-grid {
-      display: grid;
-      gap: 1.75rem;
-      align-items: flex-start;
-    }
-
-    @media (min-width: 860px) {
-      .contact-grid {
-        grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-      }
-    }
-
-    .contact-card {
-      background: #ffffff;
-      border-radius: 18px;
-      padding: 1.5rem;
-      border: 1px solid #e5e7eb;
-      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
-    }
-
-    .contact-aside {
-      font-size: 0.9rem;
-      color: var(--muted);
-    }
-
-    .contact-aside h3 {
-      font-size: 1rem;
-      margin-top: 0;
-      margin-bottom: 0.5rem;
-      color: var(--text);
-    }
-
-    .contact-aside p {
-      margin: 0 0 0.5rem;
-    }
-
-    .contact-aside strong {
-      color: var(--text);
-    }
-
-    .contact-form-group {
-      margin-bottom: 0.8rem;
-    }
-
-    .contact-label {
-      display: block;
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: #374151;
-      margin-bottom: 0.25rem;
-    }
-
-    .contact-input,
-    .contact-textarea,
-    .contact-select {
-      width: 100%;
-      border-radius: 10px;
-      border: 1px solid #d1d5db;
-      padding: 0.6rem 0.7rem;
-      font-size: 0.9rem;
-      font-family: inherit;
-      color: #111827;
-      background: #ffffff;
-      transition: border-color 0.1s ease, box-shadow 0.1s ease;
-    }
-
-    .contact-input:focus,
-    .contact-textarea:focus,
-    .contact-select:focus {
-      outline: none;
-      border-color: var(--primary);
-      box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.2);
-    }
-
-    .contact-textarea {
-      min-height: 90px;
-      resize: vertical;
-    }
-
-    .contact-hint {
-      font-size: 0.75rem;
-      color: var(--muted);
-      margin-top: 0.2rem;
-    }
-
-    .contact-inline {
-      display: grid;
-      gap: 0.8rem;
-    }
-
-    @media (min-width: 640px) {
-      .contact-inline {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-    }
+    .contact-textarea { min-height: 100px; resize: vertical; }
+    .contact-input:focus { outline: 2px solid var(--primary); border-color: transparent; }
 
     /* Footer */
-    footer {
-      border-top: 1px solid #e5e7eb;
-      padding: 1.4rem 1.2rem;
-      font-size: 0.8rem;
-      color: var(--muted);
-      background: #f9fafb;
-    }
+    footer { border-top: 1px solid #e5e7eb; padding: 3rem 0; background: #ffffff; color: var(--muted); font-size: 0.9rem; }
+    .footer-inner { display: flex; flex-direction: column; gap: 1rem; align-items: center; text-align: center; }
+    .footer-links a { margin: 0 0.75rem; color: #475569; }
+    .footer-links a:hover { color: var(--primary); }
 
-    .footer-inner {
-      max-width: 1120px;
-      margin: 0 auto;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.6rem;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .footer-links {
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-
-    /* 🔍 Mobile tweaks */
+    /* Mobile */
     @media (max-width: 640px) {
-      .nav {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.4rem;
-      }
-
-      .nav-links {
-        width: 100%;
-        justify-content: flex-start;
-        font-size: 0.85rem;
-        gap: 0.75rem;
-      }
-
-      .section {
-        padding: 2.2rem 1rem;
-      }
-
-      .hero-grid {
-        gap: 2rem;
-      }
-
-      .hero-subtitle {
-        font-size: 0.95rem;
-      }
-
-      .hero-actions {
-        flex-direction: column;
-        align-items: stretch;
-      }
-
-      .btn {
-        width: 100%;
-        justify-content: center;
-        white-space: normal;
-      }
-
-      .btn-text {
-        justify-content: flex-start;
-        width: auto;
-      }
-
-      .hero-badges {
-        gap: 0.35rem;
-      }
-
-      .hero-badges span {
-        font-size: 0.72rem;
-      }
-
-      .price-row {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .booking-block {
-        border-radius: 14px;
-      }
-
-      .hero-card img {
-        max-height: 320px;
-      }
-
-      .section-title {
-        font-size: 1.3rem;
-      }
+      .nav { flex-direction: column; align-items: flex-start; gap: 1rem; }
+      .nav-links { width: 100%; gap: 1.5rem; }
+      .hero-grid { gap: 2rem; }
+      .hero-actions { flex-direction: column; align-items: stretch; }
+      .hero-card img { height: 250px; }
+      .pricing-grid, .contact-grid { grid-template-columns: 1fr; }
     }
   </style>
 
-  <!-- LocalBusiness Schema (update name, phone, URL) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "FlatRate Tech Concierge & Senior Tech Support",
-    "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1600&q=80",
-    "@id": "https://www.yourdomain.com/tech-concierge",
-    "url": "https://www.yourdomain.com/tech-concierge",
-    "telephone": "+1-XXX-XXX-XXXX",
+    "image": "https://www.flatratefurnitureassembly.com/images/logo-frfa.webp",
+    "url": "https://www.flatratefurnitureassembly.com/tech-concierge.html",
+    "telephone": "+1-347-978-8672",
+    "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "",
       "addressLocality": "Bronx",
       "addressRegion": "NY",
       "postalCode": "10463",
       "addressCountry": "US"
-    },
-    "areaServed": {
-      "@type": "GeoCircle",
-      "geoMidpoint": {
-        "@type": "GeoCoordinates",
-        "latitude": 40.8810,
-        "longitude": -73.9070
-      },
-      "geoRadius": 6000
-    },
-    "serviceArea": {
-      "@type": "Place",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Bronx",
-        "addressRegion": "NY",
-        "postalCode": "10463",
-        "addressCountry": "US"
-      }
     },
     "geo": {
       "@type": "GeoCoordinates",
       "latitude": 40.8810,
       "longitude": -73.9070
     },
-    "description": "In-home tech help and patient senior tech support in Bronx 10463. Smart TV setup, WiFi troubleshooting, phone setup, scam protection and more with clear flat-rate pricing.",
-    "priceRange": "$$"
+    "areaServed": ["Riverdale", "Kingsbridge", "Marble Hill", "Bronx"]
   }
   </script>
 </head>
@@ -883,135 +234,73 @@
 <div class="page">
   <header>
     <nav class="nav">
-      <a href="/" class="nav-brand">
-        <img src="images/logo-frfa.webp" alt="FlatRate Furniture Assembly logo" class="logo-img" width="50" height="50" />
+      <a href="index.html" class="nav-brand">
+        <img src="images/logo-frfa.webp" alt="FlatRate Logo" class="nav-logo" width="34" height="34" />
         <div>
           <span>FlatRate Furniture Assembly</span>
-          <span class="nav-tagline">Now also offering in-home Tech Concierge</span>
+          <span class="nav-tagline">Now offering Tech Concierge</span>
         </div>
       </a>
       <div class="nav-links">
-        <a href="/">Furniture Assembly</a>
+        <a href="index.html">Furniture Assembly</a>
         <a href="#contact">Contact</a>
       </div>
       <div class="nav-cta">
-        <span class="pill">
-          <span class="dot"></span>
-          Same-week appointments in 10463
-        </span>
+        <span class="pill"><span class="dot"></span> Same-week in 10463</span>
       </div>
     </nav>
   </header>
 
   <main>
-    <!-- Hero -->
     <section class="section">
       <div class="container hero-grid">
         <div>
-          <div class="eyebrow">
-            <span>New</span> In-Home Tech Help for Seniors & Busy Locals
-          </div>
+          <div class="eyebrow"><span>New</span> In-Home Tech Help for Seniors</div>
           <h1>Patient, In-Home Tech Concierge in the Bronx (10463)</h1>
           <p class="hero-subtitle">
             Smart TV not working? WiFi acting up? New phone or tablet feels confusing?
-            I come to your home in the 10463 area and handle the tech with patience, kindness, and clear flat-rate pricing.
+            I come to your home in Riverdale/Kingsbridge and handle the tech with patience, kindness, and clear flat-rate pricing.
           </p>
 
           <div class="hero-badges">
-            <span>Perfect for seniors & caregivers</span>
-            <span>No tech jargon, no pressure</span>
-            <span>Flat-rate, upfront pricing</span>
+            <span>Perfect for Seniors</span>
+            <span>No Tech Jargon</span>
+            <span>Flat-Rate Pricing</span>
           </div>
 
           <div class="hero-actions">
-            <a href="tel:347-978-8672" class="btn btn-primary">
-              📞 Call/Text Now
-            </a>
-            <a href="#booking" class="btn btn-secondary">
-              📅 View Pricing & Book
-            </a>
-            <button type="button" class="btn btn-text" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
-              See what I can help with ↓
-            </button>
+            <a href="tel:347-978-8672" class="btn btn-primary">📞 Call/Text Now</a>
+            <a href="#booking" class="btn btn-secondary">📅 View Pricing</a>
           </div>
+          
           <div class="hero-note">
-            <strong>Service Area:</strong> Riverdale, Kingsbridge, Marble Hill, Van Cortlandt & nearby Bronx neighborhoods.
+            <strong>Service Area:</strong> Riverdale, Kingsbridge, Marble Hill, Van Cortlandt.
           </div>
         </div>
 
         <div class="hero-media">
           <div class="hero-card">
-            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1600&q=80"
-                 alt="Friendly technician helping an older woman with her laptop at home" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80"
+                 alt="Friendly technician helping a senior with a laptop"
+                 width="800" height="600"
+                 loading="eager" fetchpriority="high" />
             <div class="hero-tag">
-              <span class="hero-tag-dot"></span>
-              In-home same-week appointments
+              <span class="dot"></span> In-home same-week appointments
             </div>
             <div class="hero-overlay-card">
               <strong>“Thank you for being so patient”</strong>
               Helped set up Smart TV, WiFi, and a new phone for a senior in Riverdale.
-              No confusing tech talk — just clear guidance and written notes to keep.
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Who it's for / benefits -->
-    <section class="section section-alt">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-kicker">Who I Help</div>
-          <h2 class="section-title">Designed for seniors, caregivers & busy locals who just want the tech to work</h2>
-          <p class="section-subtitle">
-            Not everyone grew up with smartphones and streaming apps. I bring patience, clarity, and a friendly attitude
-            right to your door in the 10463 area — no need to travel or sit on hold with tech support.
-          </p>
-        </div>
-
-        <div class="grid-3">
-          <div class="card">
-            <div class="badge">👵</div>
-            <h3>Seniors & Older Adults</h3>
-            <p>Gentle, step-by-step help with phones, tablets, computers, TV remotes and WiFi — at your pace, without judgment.</p>
-            <ul class="list-check">
-              <li>Clear written notes left behind</li>
-              <li>Repeat questions are always welcome</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <div class="badge">👨‍👩‍👧‍👦</div>
-            <h3>Families & Caregivers</h3>
-            <p>Make sure your loved ones are safe online, can reach you easily, and enjoy their devices without frustration.</p>
-            <ul class="list-check">
-              <li>Scam & fraud awareness checks</li>
-              <li>Speed-dial & emergency contacts setup</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <div class="badge">💼</div>
-            <h3>Busy Professionals at Home</h3>
-            <p>Need a functioning home setup but no time to troubleshoot? I handle it while you focus on your day.</p>
-            <ul class="list-check">
-              <li>Home office & printer setup</li>
-              <li>Smart TV & streaming apps configured</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services -->
-    <section id="services" class="section">
+    <section id="services" class="section section-alt">
       <div class="container">
         <div class="section-header">
           <div class="section-kicker">Services</div>
-          <h2 class="section-title">What I can help with during a home visit</h2>
-          <p class="section-subtitle">
-            Every visit is tailored to what you or your family member needs. Most appointments cover 2–4 items from this list.
-          </p>
+          <h2 class="section-title">What I can help with during a visit</h2>
         </div>
 
         <div class="grid-3">
@@ -1019,10 +308,9 @@
             <div class="badge">📺</div>
             <h3>TV & Entertainment</h3>
             <ul class="list-check">
-              <li>Smart TV setup (Samsung, LG, Roku, Fire TV, etc.)</li>
-              <li>Streaming apps: Netflix, YouTube, Prime, and more</li>
+              <li>Smart TV setup (Samsung, Roku, Fire TV)</li>
+              <li>Streaming apps: Netflix, YouTube</li>
               <li>Remote control & input confusion fixed</li>
-              <li>Soundbar or speaker setup (basic)</li>
             </ul>
           </div>
 
@@ -1030,10 +318,9 @@
             <div class="badge">📶</div>
             <h3>WiFi & Internet</h3>
             <ul class="list-check">
-              <li>WiFi/router setup & password reset</li>
-              <li>Better placement for stronger signal</li>
-              <li>Connecting phones, tablets & laptops to WiFi</li>
-              <li>Basic internet speed & security check</li>
+              <li>WiFi router setup & password reset</li>
+              <li>Connecting phones & tablets to WiFi</li>
+              <li>Basic internet speed check</li>
             </ul>
           </div>
 
@@ -1042,31 +329,28 @@
             <h3>Phones & Tablets</h3>
             <ul class="list-check">
               <li>New phone setup & contacts transfer</li>
-              <li>Ringtones, volume & font size adjustments</li>
-              <li>Shortcut icons for family numbers</li>
+              <li>Adjust text size & volume</li>
               <li>Basic email & messaging setup</li>
             </ul>
           </div>
 
           <div class="card">
             <div class="badge">💻</div>
-            <h3>Computers & Laptops</h3>
+            <h3>Computers & Printers</h3>
             <ul class="list-check">
-              <li>New computer setup, basic apps installed</li>
+              <li>New computer setup</li>
               <li>Printer setup & test print</li>
-              <li>Simple file organization & backups</li>
-              <li>Basic security & update check</li>
+              <li>Simple file organization</li>
             </ul>
           </div>
 
           <div class="card">
             <div class="badge">🛡️</div>
-            <h3>Safety & Scam Protection</h3>
+            <h3>Safety & Scams</h3>
             <ul class="list-check">
-              <li>Review suspicious emails & messages</li>
-              <li>Simple scam-prevention tips explained</li>
-              <li>Password & lock screen setup</li>
-              <li>Secure note for important info (offline)</li>
+              <li>Review suspicious emails</li>
+              <li>Simple scam-prevention tips</li>
+              <li>Password organization</li>
             </ul>
           </div>
 
@@ -1074,309 +358,129 @@
             <div class="badge">📝</div>
             <h3>“Teach Me” Sessions</h3>
             <ul class="list-check">
-              <li>How to video call family & friends</li>
-              <li>How to send photos or voice messages</li>
-              <li>How to use YouTube, music or Bible apps</li>
-              <li>Written step-by-step instructions left behind</li>
+              <li>How to video call family</li>
+              <li>How to send photos</li>
+              <li>Written step-by-step notes provided</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Pricing & Bundles -->
-    <section id="booking" class="section section-alt">
+    <section id="booking" class="section">
       <div class="container">
         <div class="section-header">
           <div class="section-kicker">Pricing</div>
-          <h2 class="section-title">Simple, flat-rate pricing — no surprise hourly bills</h2>
-          <p class="section-subtitle">
-            Every visit includes patient, in-home support in the 10463 area. I keep it simple, clear and upfront so you know exactly what you’ll pay before I arrive.
-          </p>
+          <h2 class="section-title">Simple, flat-rate pricing</h2>
+          <p class="section-subtitle">No surprise hourly bills. You know exactly what you pay before I arrive.</p>
         </div>
 
         <div class="pricing-grid">
           <div class="price-card">
             <div class="price-row">
-              <span class="price-label">Standard Home Visit (up to 60 minutes)</span>
+              <span class="price-label">Standard Visit (60 mins)</span>
               <span class="price-value">$95</span>
             </div>
-            <p class="price-hint">Covers most TV, WiFi or phone issues and 2–3 main tasks in a single visit.</p>
+            <p class="price-hint">Covers most TV, WiFi or phone issues and 2–3 main tasks.</p>
 
             <div class="price-row">
-              <span class="price-label">Extended Visit (up to 90 minutes)</span>
+              <span class="price-label">Extended Visit (90 mins)</span>
               <span class="price-value">$135</span>
             </div>
-            <p class="price-hint">Ideal for full setups (TV + WiFi + phone), or when helping two people in the same home.</p>
+            <p class="price-hint">Ideal for full setups (TV + WiFi + Phone) or helping two people.</p>
 
             <div class="price-row">
-              <span class="price-label">Quick Check-In (up to 30 minutes)</span>
+              <span class="price-label">Quick Check-In (30 mins)</span>
               <span class="price-value">$65</span>
             </div>
-            <p class="price-hint">Great for a follow-up, scam review, or one focused issue.</p>
+            <p class="price-hint">Great for follow-ups or one specific issue.</p>
 
-            <p class="price-hint"><strong>Note:</strong> Prices shown are examples. Adjust to match your real rates.</p>
-
-            <div style="margin-top:1rem;">
-              <a href="tel:XXX-XXX-XXXX" class="btn btn-primary">📞 Call/Text to Check Availability</a>
+            <div style="margin-top:2rem;">
+              <a href="tel:347-978-8672" class="btn btn-primary" style="width:100%">📞 Check Availability</a>
             </div>
-            <p class="price-hint" style="margin-top:0.6rem;">
-              <strong>Same-week appointments</strong> usually available in Riverdale, Kingsbridge, Marble Hill & nearby.
-            </p>
           </div>
 
           <div class="bundles">
-            <h3>Bundle with Furniture Assembly & Save</h3>
-            <p>Already booking furniture assembly with me? Add tech help during the same visit for a discounted rate.</p>
+            <h3>Bundle with Furniture Assembly?</h3>
+            <p>Already hiring me to build a desk or TV stand? Add tech help during the same visit for a discount.</p>
             <ul>
-              <li><strong>TV Stand Assembly + Smart TV Setup</strong><br />Add TV setup for <em>+$60</em> instead of a full visit.</li>
-              <li><strong>Desk Assembly + Computer/Printer Setup</strong><br />Add basic computer & printer setup for <em>+$70</em>.</li>
-              <li><strong>Bedroom Setup + WiFi Booster</strong><br />Add WiFi optimization in bedroom for <em>+$50</em>.</li>
+              <li><strong>TV Stand + Smart TV Setup:</strong> Add setup for +$60</li>
+              <li><strong>Desk + Printer/Computer:</strong> Add setup for +$70</li>
             </ul>
-            <p style="font-size:0.85rem; color:#166534;">
-              Ask about tech-help add-ons when you book your furniture assembly. One trip, two problems solved.
-            </p>
-            <a href="/#pricing" class="btn btn-secondary" style="margin-top:0.5rem;">View Furniture Assembly Pricing →</a>
+            <a href="index.html#services" class="btn-text">View Furniture Assembly Pricing →</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- How it works -->
-    <section class="section">
+    <section id="contact" class="section section-alt">
       <div class="container">
         <div class="section-header">
-          <div class="section-kicker">How It Works</div>
-          <h2 class="section-title">Easy, respectful and stress-free from start to finish</h2>
-        </div>
-
-        <div class="steps">
-          <div class="card">
-            <div class="step-number">1</div>
-            <h3>Tell me what you need help with</h3>
-            <p>Call, text or send a quick message describing what’s going on — “TV not working”, “new phone”, “WiFi issues”, etc. I’ll recommend the right visit type.</p>
-          </div>
-
-          <div class="card">
-            <div class="step-number">2</div>
-            <h3>I come to your home in 10463</h3>
-            <p>We pick a day and time that works. I arrive on time, explain everything before starting, and work patiently at your pace — no rush, no judgment.</p>
-          </div>
-
-          <div class="card">
-            <div class="step-number">3</div>
-            <h3>Everything tested, explained & written down</h3>
-            <p>Before I leave, we test everything together, I answer questions, and I leave simple written notes so it’s easy to remember what we did.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ + Service Area -->
-    <section class="section section-alt">
-      <div class="container" style="display:grid; gap:2rem; align-items:flex-start;">
-        <div class="faq">
-          <div class="section-kicker">FAQ</div>
-          <h2 class="section-title">Common questions about Tech Concierge visits</h2>
-
-          <div class="faq-item">
-            <h3>Do you only work with seniors?</h3>
-            <p>No. While this service is designed with seniors and caregivers in mind, I help anyone in the 10463 area who wants patient, in-home tech help.</p>
-          </div>
-
-          <div class="faq-item">
-            <h3>Do I need to prepare anything before you come?</h3>
-            <p>It helps if you have any passwords, account logins or devices ready in one place. If you’re not sure where things are, I’ll do my best to help you find them.</p>
-          </div>
-
-          <div class="faq-item">
-            <h3>Can you help someone even if they’re “not good with tech” at all?</h3>
-            <p>Yes. That’s exactly who this service is for. I explain everything slowly, in plain language, and I never make anyone feel embarrassed for asking questions.</p>
-          </div>
-
-          <div class="faq-item">
-            <h3>Do you offer ongoing check-ins or follow-ups?</h3>
-            <p>Yes. Many families schedule follow-up visits every few months for scam checks, device updates and new questions. Ask about repeat-visit pricing when you call.</p>
-          </div>
-        </div>
-
-        <div>
-          <div class="card">
-            <div class="section-kicker">Service Area</div>
-            <h2 class="section-title" style="font-size:1.25rem; margin-bottom:0.4rem;">Where I currently offer in-home visits</h2>
-            <p class="section-subtitle">
-              I’m based in the Bronx and focus on the 10463 and nearby neighborhoods. If you’re just outside this area, feel free to contact me — I may still be able to help.
-            </p>
-            <div class="pill-list">
-              <span class="pill-tag">Riverdale (10463)</span>
-              <span class="pill-tag">Kingsbridge</span>
-              <span class="pill-tag">Marble Hill</span>
-              <span class="pill-tag">Spuyten Duyvil</span>
-              <span class="pill-tag">Van Cortlandt</span>
-              <span class="pill-tag">Nearby Bronx areas</span>
-            </div>
-            <p style="margin-top:0.8rem; font-size:0.85rem; color:var(--muted);">
-              If you’re booking furniture assembly and tech help together, I can sometimes travel a bit further. Just ask when you call or text.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact (dedicated for Tech Concierge) -->
-    <section id="contact" class="section">
-      <div class="container">
-        <div class="section-header">
-          <div class="section-kicker">Contact</div>
-          <h2 class="section-title">Tell me who needs help and what’s going on</h2>
-          <p class="section-subtitle">
-            This contact section is just for Tech Concierge & senior tech support. Share a few details so I can tell you
-            the best visit type and give you a clear expectation before I come.
-          </p>
+          <h2 class="section-title">Request a Tech Visit</h2>
+          <p class="section-subtitle">Tell me what you need help with. I'll text or call you back to confirm details.</p>
         </div>
 
         <div class="contact-grid">
           <div class="contact-card">
-            <!-- You can change action to your backend or form tool later -->
-            <form action="mailto:sanderson@flatratefurnitureassembly.com" method="post" enctype="text/plain">
-              <div class="contact-form-group">
-                <label class="contact-label" for="name">Your name</label>
-                <input class="contact-input" type="text" id="name" name="name" required />
-              </div>
+            <form action="https://formspree.io/f/xgvgygzr" method="POST">
+              <input type="hidden" name="_subject" value="New Tech Concierge Request" />
+              
+              <div class="contact-label">Your Name</div>
+              <input class="contact-input" type="text" name="name" required />
 
-              <div class="contact-inline">
-                <div class="contact-form-group">
-                  <label class="contact-label" for="phone">Best phone number</label>
-                  <input class="contact-input" type="tel" id="phone" name="phone" required />
-                  <div class="contact-hint">I’ll text or call you back to confirm details.</div>
-                </div>
-                <div class="contact-form-group">
-                  <label class="contact-label" for="relationship">Who is this for?</label>
-                  <select class="contact-select" id="relationship" name="relationship">
-                    <option value="">Select an option</option>
-                    <option value="myself">Myself</option>
-                    <option value="parent">Parent</option>
-                    <option value="grandparent">Grandparent</option>
-                    <option value="spouse">Spouse/Partner</option>
-                    <option value="other">Other family member</option>
-                  </select>
-                </div>
-              </div>
+              <div class="contact-label">Phone Number</div>
+              <input class="contact-input" type="tel" name="phone" required />
 
-              <div class="contact-form-group">
-                <label class="contact-label" for="neighborhood">Neighborhood / ZIP</label>
-                <input class="contact-input" type="text" id="neighborhood" name="neighborhood" placeholder="e.g. Riverdale 10463" />
-              </div>
+              <div class="contact-label">Who is this for?</div>
+              <select class="contact-select" name="relationship">
+                <option value="Myself">Myself</option>
+                <option value="Parent">Parent</option>
+                <option value="Grandparent">Grandparent</option>
+                <option value="Spouse">Spouse</option>
+              </select>
 
-              <div class="contact-form-group">
-                <label class="contact-label" for="help">What do you need help with?</label>
-                <textarea class="contact-textarea" id="help" name="help" placeholder="Example: Smart TV isn’t connecting to WiFi, and my mom just got a new phone she needs set up." required></textarea>
-              </div>
+              <div class="contact-label">Neighborhood / Address</div>
+              <input class="contact-input" type="text" name="address" placeholder="e.g. Riverdale 10463" />
 
-              <div class="contact-inline">
-                <div class="contact-form-group">
-                  <label class="contact-label" for="preferred-time">Preferred day/time</label>
-                  <input class="contact-input" type="text" id="preferred-time" name="preferred-time" placeholder="e.g. Weekday afternoons, Saturday mornings" />
-                </div>
-                <div class="contact-form-group">
-                  <label class="contact-label" for="contact-method">Preferred contact method</label>
-                  <select class="contact-select" id="contact-method" name="contact-method">
-                    <option value="">Select an option</option>
-                    <option value="call">Phone call</option>
-                    <option value="text">Text message</option>
-                  </select>
-                </div>
-              </div>
+              <div class="contact-label">What do you need help with?</div>
+              <textarea class="contact-textarea" name="message" placeholder="Example: My mom needs help setting up her new iPad and connecting it to WiFi." required></textarea>
 
-              <div class="contact-form-group">
-                <button type="submit" class="btn btn-primary">Submit Tech Help Request</button>
-              </div>
-
-              <p class="contact-hint">
-                Prefer to reach out directly? You can also call or text me at <strong>347-978-8672</strong>.
-              </p>
+              <button type="submit" class="btn btn-primary" style="width:100%; margin-top:1rem;">Send Request</button>
             </form>
           </div>
 
-          <div class="contact-aside">
-            <h3>What happens after you reach out?</h3>
-            <p>
-              I’ll review what you shared and get back to you—usually the same day or next business day—to:
-            </p>
+          <div style="padding-top: 1rem;">
+            <h3>What happens next?</h3>
             <ul class="list-check">
-              <li>Confirm I serve your location</li>
-              <li>Recommend the right visit length (Quick, Standard or Extended)</li>
-              <li>Give you a clear price before booking</li>
-              <li>Suggest a day and time that works for you</li>
+              <li>I'll review your request.</li>
+              <li>I'll text/call to confirm if I can help and give you a quote.</li>
+              <li>We pick a time that works for you.</li>
             </ul>
-            <p>
-              If you’re helping a parent or grandparent, you’re welcome to be there during the visit or on speakerphone
-              while we walk through everything.
+            <p style="margin-top:2rem;">
+              <strong>Prefer to text?</strong><br>
+              You can text me directly at <a href="tel:347-978-8672" style="color:var(--primary); font-weight:700;">347-978-8672</a>.
             </p>
-            <p><strong>Not ready to book yet?</strong><br />
-              You can text a quick question first and we’ll figure out if this is the right fit.
-            </p>
-            <p><strong>Call/Text:</strong> <a href="tel:347-978-8672">347-978-8672</a></p>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Booking CTA -->
-    <section class="section">
-      <div class="container">
-        <div class="booking-block">
-          <div>
-            <h2>Ready for stress-free tech at home?</h2>
-            <p>
-              Whether it’s your TV, WiFi, phone or computer, we’ll get it running smoothly — and you’ll understand how to use it with confidence when I’m done.
-            </p>
-          </div>
-          <div class="booking-details">
-            <div class="booking-line">
-              <strong>Call or Text:</strong> <a href="tel:347-978-8672" style="color:#bfdbfe;">XXX-XXX-XXXX</a>
-            </div>
-            <div class="booking-line">
-              <strong>Typical availability:</strong> Weekdays & selected weekends in the Bronx (10463 area).
-            </div>
-            <div class="booking-line">
-              <strong>Want to bundle with furniture assembly?</strong> Mention it in your message and I’ll recommend the best option.
-            </div>
-            <div style="margin-top:0.8rem;">
-              <a href="#contact" class="btn btn-secondary">Or fill out the Tech Help form →</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
   </main>
 
   <footer>
-  <div class="footer-inner">
-    <div>
-      © <span id="year"></span> FlatRate Furniture Assembly &amp; Tech Concierge · Bronx, NY 10463
+    <div class="container footer-inner">
+      <div>
+        &copy; <span id="year"></span> FlatRate Furniture Assembly & Tech Concierge · Bronx, NY 10463
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Furniture Assembly</a>
+        <a href="tech-concierge.html">Tech Concierge</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
-    <div class="footer-links">
-      <a href="/">Furniture Assembly</a>
-      <a href="#tech-concierge">Tech Concierge</a>
-      <a href="#contact">Contact</a>
-      <a href="/privacy.html">Privacy Policy</a>
-      <a href="/terms.html">Terms of Service</a>
-      <a href="/cancellation-rescheduling.html">Cancellation &amp; Rescheduling</a>
-    </div>
-  </div>
-</footer>
-
-<script>
-  // Set current year in footer (only keep ONE of these on the page)
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
+  </footer>
 </div>
 
 <script>
-  // Set current year in footer
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 </body>
