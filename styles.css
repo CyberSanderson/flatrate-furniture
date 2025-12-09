@@ -736,3 +736,10 @@ textarea {
     padding: 1.25rem 1.15rem;
   }
 }
+
+/* Add this to the bottom of styles.css */
+.footer-links a {
+  display: inline-block;
+  padding: 8px 10px; /* Adds clickable space around the words */
+  margin: 0 2px;
+}
