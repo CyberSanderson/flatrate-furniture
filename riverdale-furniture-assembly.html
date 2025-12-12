@@ -159,5 +159,50 @@
       </div>
     </section>
   </main>
+   <footer class="site-footer">
+    <div class="container footer-inner">
+      
+      <div class="footer-links" style="margin-bottom: 1.5rem; text-align: center; font-size: 0.9rem;">
+        <strong>Locations:</strong> 
+        <a href="riverdale-furniture-assembly.html">Riverdale</a> | 
+        <a href="yonkers-furniture-assembly.html">Yonkers</a> | 
+        <a href="westchester-furniture-assembly.html">Westchester</a> |
+        <a href="crib-nursery-assembly.html">Crib Assembly</a> |
+        <a href="wayfair-amazon-assembly.html">Wayfair & Amazon Assembly</a>
+
+      </div>
+
+      <div class="footer-main">
+        <p class="footer-brand">FlatRate Furniture Assembly</p>
+        <p class="footer-contact">
+          Serving Bronx, Yonkers & Westchester<br>
+          <a href="tel:+1-347-978-8672">+1 347-978-8672</a>
+        </p>
+      </div>
+      <p class="footer-meta">
+        &copy; <span id="year"></span> FlatRate Furniture Assembly. All rights reserved.
+      </p>
+    </div>
+
+    <script>
+      // Current Year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // Mobile Menu Logic
+      const menuToggle = document.querySelector(".menu-toggle");
+      const body = document.body;
+      if (menuToggle) {
+        menuToggle.addEventListener("click", () => {
+          body.classList.toggle("nav-open");
+        });
+      }
+      // Close menu when clicking link
+      document.querySelectorAll(".nav a").forEach((link) => {
+        link.addEventListener("click", () => {
+          body.classList.remove("nav-open");
+        });
+      });
+    </script>
+  </footer>
 </body>
 </html>
