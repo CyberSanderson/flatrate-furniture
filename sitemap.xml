@@ -8,43 +8,50 @@
   </url>
 
   <url>
-    <loc>https://www.flatratefurnitureassembly.com/wayfair-amazon-assembly.html</loc>
-    <lastmod>2025-12-12</lastmod>
+    <loc>https://www.flatratefurnitureassembly.com/index.html</loc>
+    <lastmod>2025-14-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+  </url>
+
+  <url>
+    <loc>https://www.flatratefurnitureassembly.com/wayfair-amazon-assembly</loc>
+    <lastmod>2025-14-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://www.flatratefurnitureassembly.com/tech-concierge.html</loc>
-    <lastmod>2025-12-12</lastmod>
+    <loc>https://www.flatratefurnitureassembly.com/tech-concierge</loc>
+    <lastmod>2025-14-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
 
   <url>
-    <loc>https://www.flatratefurnitureassembly.com/westchester-furniture-assembly.html</loc>
-    <lastmod>2025-12-12</lastmod>
+    <loc>https://www.flatratefurnitureassembly.com/westchester-furniture-assembly</loc>
+    <lastmod>2025-14-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://www.flatratefurnitureassembly.com/crib-nursery-assembly.html</loc>
-    <lastmod>2025-12-12</lastmod>
+    <loc>https://www.flatratefurnitureassembly.com/crib-nursery-assembly</loc>
+    <lastmod>2025-14-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://www.flatratefurnitureassembly.com/riverdale-furniture-assembly.html</loc>
-    <lastmod>2025-12-12</lastmod>
+    <loc>https://www.flatratefurnitureassembly.com/riverdale-furniture-assembly</loc>
+    <lastmod>2025-14-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
 
   <url>
-    <loc>https://www.flatratefurnitureassembly.com/yonkers-furniture-assembly.html</loc>
-    <lastmod>2025-12-12</lastmod>
+    <loc>https://www.flatratefurnitureassembly.com/yonkers-furniture-assembly</loc>
+    <lastmod>2025-14-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
